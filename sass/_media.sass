@@ -1,0 +1,125 @@
+@import "bourbon"
+
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px)
+	/**/
+
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px)
+	/**/
+
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 767px)
+	.animated
+		/*CSS transitions*/
+		-o-transition-property: none !important
+		-moz-transition-property: none !important
+		-ms-transition-property: none !important
+		-webkit-transition-property: none !important
+		transition-property: none !important
+		/*CSS transforms*/
+		-o-transform: none !important
+		-moz-transform: none !important
+		-ms-transform: none !important
+		-webkit-transform: none !important
+		transform: none !important
+		/*CSS animations*/
+		-webkit-animation: none !important
+		-moz-animation: none !important
+		-o-animation: none !important
+		-ms-animation: none !important
+		animation: none !important
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px)
+	/**/
+
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px)
+	/**/
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px)
+	/**/
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px)
+	/**/
+
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 767px)
+	#responsive-menu li.active a
+		color: #00bc8c
+		background-color: $dbc
+		border-left: 1px $mc solid
+		border-top: 1px $mc solid
+		border-right: 1px $mc solid
+		border-bottom: 2px #BB0C07 solid
+
+	#responsive-menu li a:hover
+		color: #00bc8c
+		background-color: $dbc
+		border-left: 1px $mc solid
+		border-top: 1px $mc solid
+		border-right: 1px $mc solid
+		border-bottom: 2px #BB0C07 solid
+		text-decoration: none
+		transition: all 1s ease
+
+	#responsive-menu 
+		top: 70px
+		width: 240px
+		height: 100%
+		background: rgba(24, 26, 28, 1)
+		position: fixed
+		z-index: 5500
+		right: -1500px
+		display: none
+		overflow: auto
+
+	#responsive-menu ul 
+		padding: 0
+		margin: 0
+		list-style: none
+
+	#responsive-menu ul li 
+		display: block
+		margin-bottom: 2px
+
+	#responsive-menu ul li a 
+		color: #fff
+		background-color: $dbc
+		border-left: 1px $mc solid
+		border-top: 1px $mc solid
+		border-right: 1px $mc solid
+		border-bottom: 2px solid $mc
+		padding: 12px 18px
+		display: block
+		background-clip: padding-box
+		text-transform: uppercase
+
+	#responsive-menu ul li a i 
+		margin-right: 15px
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px)
+	/**/
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px)
+	/**/
+
+@media only screen and (max-width : 336px)
+	/**/
