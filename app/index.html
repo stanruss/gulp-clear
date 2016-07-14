@@ -30,13 +30,14 @@
  function fadeOutnojquery(el){el.style.opacity = 1;var interhellopreloader = setInterval(function(){el.style.opacity = el.style.opacity - 0.05;if (el.style.opacity <=0.05){ clearInterval(interhellopreloader);
   hellopreloader.style.display = "none";}},46);}window.onload = function(){setTimeout(function(){fadeOutnojquery(hellopreloader);
 },3000);};</script>   -->
-
-<header id="homes">
- 
+<div id="homes"></div>
+<header>
+    <div class="logo">Не забываемая Ялта</div>
+ <div class="layout"></div>
   <a href="#0" class="cd-nav-trigger visible-xs"><span></span></a>
   <nav id="responsive-menu">
     <ul class="menu-holder">
-      <li class="active fst"><a href="#homes"><i class="fa fa-home"></i>Наверх</a></li>
+      <li class="active fst"><a href="#"><i class="fa fa-home"></i>Наверх</a></li>
       <li class="sec"><a href="#home"><i class="fa fa-cogs"></i>Описание</a></li>
       <li class="sec"><a href="#port"><i class="fa fa-list"></i>Купить</a></li>
       <li class="sec"><a href="#contacts"><i class="fa fa-envelope"></i>Контакты</a></li>
@@ -48,7 +49,7 @@
 
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
         <ul class="nav navbar-nav hidden-xs">
-          <li class="active fst"><a  href="#homes">Наверх  <span class="sr-only">(current)</span></a></li>
+          <li class="active fst"><a  href="#">Наверх  <span class="sr-only">(current)</span></a></li>
           <li class="sec"><a href="#home">Описание</a></li>
           <li class="sec"><a href="#port">Купить</a></li>
           <li class="sec"><a href="#contacts">Контакты</a></li>
