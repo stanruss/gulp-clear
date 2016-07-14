@@ -9,11 +9,18 @@ html body
 	font-family: $RR
 	overflow-x: hidden
 	color: $black
+    margin: 0
+    padding: 0
 	
 .hidden
 	display: none
 
-
+#homes
+    height: 740px
+    background-image: url(../img/bg-header.jpg)
+    background-repeat: no-repeat
+    background-position: center -50px
+    background-size: cover
 
 
 #responsive-menu li.active a
@@ -35,11 +42,11 @@ html body
 	transition: all 1s ease
 
 #responsive-menu 
-	top: 70px
+	
 	width: 240px
 	height: 100%
-	background: rgba(24, 26, 28, 1)
-	position: fixed
+	
+	position: relative
 	z-index: 5500
 	right: -1500px
 	display: block
@@ -69,11 +76,11 @@ html body
 #responsive-menu ul li a i 
 	margin-right: 15px
 
-
+.navbar-inverse .navbar-collapse, nav.navbar-inverse  
+    border: none
 
 nav.navbar-inverse
-	background-image: url(img/menu-bg.jpg)
-	background-repeat: repeat-x
+	background-color: transparent
 	.sec a
 		display: flex
 		justify-content: center
@@ -93,97 +100,51 @@ nav.navbar-inverse
 	background-size: 240px
 	 
 nav.navbar
-	position: fixed
+	position: relative
 	z-index: 100
-	top: 141px
 	border-radius: none
-	min-height: 24px
+	min-height: 60px
 	width: 100%
-	height: 36px
-	transition: all 1s ease
+	height: 60px
+	
 
-nav.navbar.sticky
-	position: fixed
-	z-index: 100
-	top: 0
+
 .navbar-inverse ul.navbar-nav a
-	padding-top: 7px
-	padding-bottom: 6px
+	padding-top: 20px
+	padding-bottom: 20px
 
-#single-project #portfolio-grid
-	padding-left: 0
-	li 
-		margin: 0 auto
-		max-width: 650px
+
 
 .navbar-inverse ul.navbar-nav
-	float: none
+	float: right
 	width: 400px
-	margin: 0 auto
+	
 
 
 nav.navbar-inverse .navbar-nav > li > a:hover:after, nav.navbar-inverse .navbar-nav > li > a.active:after
 	width: 100px
 nav.navbar-inverse .navbar-nav > li > a
 	color: $white
-	background-color: #3b4255
-	transition: color 1s ease
 	position: relative
 	text-align: center
 nav.navbar-inverse .navbar-nav > li
 	width: 100px
 
 
-nav.navbar-inverse .navbar-nav > li > a:after
-	-webkit-transition: 0.5s ease
-	transition: 0.5s ease
-	position: absolute
-	height: 2px
-	top: 100%
-	margin-top: -1px
-	content: ''
-	left: 50%
-	margin-left: -50px
-	background-color: $red
-	opacity: 1
-	width: 0
-	z-index: 20
+
 
 nav.navbar-inverse .navbar-nav > .active > a,  nav.navbar-inverse .navbar-nav > .active > a:focus
 	color: $white
-	background-color: $sdgrey
-	border-left: 1px $mc solid	
-	border-right: 1px $mc solid	
-	border-bottom: 1px $red solid
-	transition: background-color 1s ease
-nav.navbar-inverse .navbar-nav > .active > a:hover
-	color: $green
-	background-color: $sdgrey
-	transition: color 1s ease
-nav.navbar-inverse .navbar-nav > .active > a:after
-	-webkit-transition: 0.5s ease
-	transition: 0.5s ease
-	position: absolute
-	height: 2px
-	top: 100%
-	margin-top: -1px
-	content: ''
-	left: 50%
-	margin-left: -50px
-	background-color: $red
-	opacity: 1
-	width: 0
-	z-index: 20
+    
+
+nav.navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus
+    background-color: transparent
+    
 
 
-nav.navbar-inverse .navbar-nav > li > a:hover
-	color: $white
-	background-color: $sdgrey
-	transition: color 1s ease
-nav.navbar-inverse .navbar-nav > li > a:focus
-	color: $white
-	background-color: $dbc
-	transition: color 1s ease
+
+
+
 
 .cd-nav-trigger
   display: block
